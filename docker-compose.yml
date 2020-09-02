@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app-spring:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - 1000:8080

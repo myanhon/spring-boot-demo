@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository("fakeDAO")
 public class FakePersonDataAccessService implements PersonDao {
-    private static List<Person> DB = new ArrayList<>();
+    private List<Person> DB = new ArrayList<>();
 
     @Override
     public int insertPerson(final UUID id, final Person person) {
